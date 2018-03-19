@@ -1,0 +1,250 @@
+==== NAMESPACES ====
+['default', 'kube-public', 'kube-system']
+==== NODES =========
+{
+    "kube-node-1": {
+        "Ready_Reason": "KubeletReady", 
+        "Ready_Latest_Heartbeat": "2018-03-19T09:50:15+00:00", 
+        "Ready_State": true, 
+        "kernel_version": "4.4.0-116-generic", 
+        "Hostname": "kube-node-1", 
+        "namespace": null, 
+        "Ready_Latest_Transition": "2018-03-18T04:26:13+00:00", 
+        "node_name": "kube-node-1", 
+        "cluster_name": null, 
+        "Ready_Message": "kubelet is posting ready status. AppArmor enabled", 
+        "InternalIP": "192.168.1.72", 
+        "os_image": "Ubuntu 16.04.4 LTS", 
+        "created_timestamp": "2018-03-18T04:25:23+00:00", 
+        "kubelet_version": "v1.9.4", 
+        "node_role": "Master"
+    }
+}
+==== PODS ==========
+{
+    "etcd-kube-node-1": {
+        "status": "Running", 
+        "pod_ip": "192.168.1.72", 
+        "namespace": "kube-system", 
+        "host_ip": "192.168.1.72", 
+        "node_name": "kube-node-1", 
+        "pod_name": "etcd-kube-node-1", 
+        "status_reason": "None", 
+        "status_message": "None", 
+        "containers": [
+            "etcd"
+        ]
+    }, 
+    "redis-848b98bc8b-xvq7j": {
+        "status": "Running", 
+        "pod_ip": "10.244.0.11", 
+        "namespace": "default", 
+        "host_ip": "192.168.1.72", 
+        "node_name": "kube-node-1", 
+        "pod_name": "redis-848b98bc8b-xvq7j", 
+        "status_reason": "None", 
+        "status_message": "None", 
+        "containers": [
+            "redis"
+        ]
+    }, 
+    "helloworld-service-v1-fd94c8576-qtp4f": {
+        "status": "Running", 
+        "pod_ip": "10.244.0.8", 
+        "namespace": "default", 
+        "host_ip": "192.168.1.72", 
+        "node_name": "kube-node-1", 
+        "pod_name": "helloworld-service-v1-fd94c8576-qtp4f", 
+        "status_reason": "None", 
+        "status_message": "None", 
+        "containers": [
+            "helloworld-service"
+        ]
+    }, 
+    "kube-flannel-ds-btgxh": {
+        "status": "Running", 
+        "pod_ip": "192.168.1.72", 
+        "namespace": "kube-system", 
+        "host_ip": "192.168.1.72", 
+        "node_name": "kube-node-1", 
+        "pod_name": "kube-flannel-ds-btgxh", 
+        "status_reason": "None", 
+        "status_message": "None", 
+        "containers": [
+            "kube-flannel"
+        ]
+    }, 
+    "kube-proxy-zzvcf": {
+        "status": "Running", 
+        "pod_ip": "192.168.1.72", 
+        "namespace": "kube-system", 
+        "host_ip": "192.168.1.72", 
+        "node_name": "kube-node-1", 
+        "pod_name": "kube-proxy-zzvcf", 
+        "status_reason": "None", 
+        "status_message": "None", 
+        "containers": [
+            "kube-proxy"
+        ]
+    }, 
+    "kube-dns-6f4fd4bdf-znt8k": {
+        "status": "Running", 
+        "pod_ip": "10.244.0.12", 
+        "namespace": "kube-system", 
+        "host_ip": "192.168.1.72", 
+        "node_name": "kube-node-1", 
+        "pod_name": "kube-dns-6f4fd4bdf-znt8k", 
+        "status_reason": "None", 
+        "status_message": "None", 
+        "containers": [
+            "kubedns", 
+            "dnsmasq", 
+            "sidecar"
+        ]
+    }, 
+    "kube-scheduler-kube-node-1": {
+        "status": "Running", 
+        "pod_ip": "192.168.1.72", 
+        "namespace": "kube-system", 
+        "host_ip": "192.168.1.72", 
+        "node_name": "kube-node-1", 
+        "pod_name": "kube-scheduler-kube-node-1", 
+        "status_reason": "None", 
+        "status_message": "None", 
+        "containers": [
+            "kube-scheduler"
+        ]
+    }, 
+    "kube-apiserver-kube-node-1": {
+        "status": "Running", 
+        "pod_ip": "192.168.1.72", 
+        "namespace": "kube-system", 
+        "host_ip": "192.168.1.72", 
+        "node_name": "kube-node-1", 
+        "pod_name": "kube-apiserver-kube-node-1", 
+        "status_reason": "None", 
+        "status_message": "None", 
+        "containers": [
+            "kube-apiserver"
+        ]
+    }, 
+    "mysql-546547b7c6-qwn88": {
+        "status": "Running", 
+        "pod_ip": "10.244.0.9", 
+        "namespace": "default", 
+        "host_ip": "192.168.1.72", 
+        "node_name": "kube-node-1", 
+        "pod_name": "mysql-546547b7c6-qwn88", 
+        "status_reason": "None", 
+        "status_message": "None", 
+        "containers": [
+            "mysql"
+        ]
+    }, 
+    "kube-controller-manager-kube-node-1": {
+        "status": "Running", 
+        "pod_ip": "192.168.1.72", 
+        "namespace": "kube-system", 
+        "host_ip": "192.168.1.72", 
+        "node_name": "kube-node-1", 
+        "pod_name": "kube-controller-manager-kube-node-1", 
+        "status_reason": "None", 
+        "status_message": "None", 
+        "containers": [
+            "kube-controller-manager"
+        ]
+    }, 
+    "helloworld-service-v2-744696b8cb-p6fs9": {
+        "status": "Running", 
+        "pod_ip": "10.244.0.10", 
+        "namespace": "default", 
+        "host_ip": "192.168.1.72", 
+        "node_name": "kube-node-1", 
+        "pod_name": "helloworld-service-v2-744696b8cb-p6fs9", 
+        "status_reason": "None", 
+        "status_message": "None", 
+        "containers": [
+            "helloworld-service"
+        ]
+    }
+}
+==== SERVICES ======
+{
+    "helloworld-service": {
+        "service_name": "helloworld-service", 
+        "namespace": "default", 
+        "ports": [
+            {
+                "port": 8080, 
+                "target_port": 8080, 
+                "protocol": "TCP", 
+                "name": "http", 
+                "node_port": 32759
+            }
+        ], 
+        "service_ip": "10.101.156.227"
+    }, 
+    "redis": {
+        "service_name": "redis", 
+        "namespace": "default", 
+        "ports": [
+            {
+                "port": 6379, 
+                "target_port": 6379, 
+                "protocol": "TCP", 
+                "name": null, 
+                "node_port": null
+            }
+        ], 
+        "service_ip": "10.100.118.153"
+    }, 
+    "kube-dns": {
+        "service_name": "kube-dns", 
+        "namespace": "kube-system", 
+        "ports": [
+            {
+                "port": 53, 
+                "target_port": 53, 
+                "protocol": "UDP", 
+                "name": "dns", 
+                "node_port": null
+            }, 
+            {
+                "port": 53, 
+                "target_port": 53, 
+                "protocol": "TCP", 
+                "name": "dns-tcp", 
+                "node_port": null
+            }
+        ], 
+        "service_ip": "10.96.0.10"
+    }, 
+    "kubernetes": {
+        "service_name": "kubernetes", 
+        "namespace": "default", 
+        "ports": [
+            {
+                "port": 443, 
+                "target_port": 6443, 
+                "protocol": "TCP", 
+                "name": "https", 
+                "node_port": null
+            }
+        ], 
+        "service_ip": "10.96.0.1"
+    }, 
+    "mysql": {
+        "service_name": "mysql", 
+        "namespace": "default", 
+        "ports": [
+            {
+                "port": 3306, 
+                "target_port": 3306, 
+                "protocol": "TCP", 
+                "name": "mysql", 
+                "node_port": null
+            }
+        ], 
+        "service_ip": "10.109.41.198"
+    }
+}
