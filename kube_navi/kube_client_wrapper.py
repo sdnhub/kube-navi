@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from kubernetes import client as kube_client
 from kubernetes import config as kube_config
 from kubernetes import watch as kube_watch
@@ -11,10 +13,10 @@ import json
 class KubeClientApiWrapper(object):
     def __init__(self, api_server='https://localhost', api_user='admin', api_pass='admin', conf_file=None):
         # By default it uses the local .kube/confi info
-        kube_config.load_kube_config(config_file=conf_file)
-        kube_client.configuration.host = api_server
-        kube_client.configuration.username = api_user
-        kube_client.configuration.password = api_pass
+        kube_config.load_kube_config()
+        #kube_client.configuration.host = api_server
+        #kube_client.configuration.username = api_user
+        #kube_client.configuration.password = api_pass
         self.kube_client_wrapper_client = kube_client.CoreV1Api()
         self.kube_ext_discovery_client = kube_client.ExtensionsV1beta1Api()
         self.resource_details = lambda: defaultdict(self.resource_details)
